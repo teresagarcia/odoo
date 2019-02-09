@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Módulo Traducciones",
+    'name': "tradus",
 
     'summary': """
-        módulo traducciones""",
+        Módulo traducciones""",
 
     'description': """
         Módulo para gestión de traducciones
@@ -13,8 +13,8 @@
     'website': "https://yasashiiuta05.blogspot.com/",
     'category': 'examen',
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base', 'baseModule'],
     'data': [
-        'views/traductores.xml',
+        'views/views.xml',
     ],
 }

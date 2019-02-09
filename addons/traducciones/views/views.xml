@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="tradus_list_traductor">
+      <field name="name">Lista de traductores</field>
+      <field name="model">tradus.traductor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="apellidos"/>
+        </tree>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+
+   <record model="ir.actions.act_window" id="tradus_action_traductor">
+      <field name="name">Traductor</field>
+      <field name="res_model">tradus.traductor</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context" eval="{'traductor_search_view':2}"/>
+    </record>
+   
+  <menuitem name="tradus" id="tradus_menu_root"/>
+
+  <menuitem name="Traductor" id="tradus_menu_traductor" parent="tradus.menu"
+              action="tradus_action_traductor"/>
+  </data>
+</odoo>
