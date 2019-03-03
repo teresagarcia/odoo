@@ -11,7 +11,7 @@
 
     'author': "Teresa García",
     'website': "https://yasashiiuta05.blogspot.com/",
-    'category': 'examen',
+    'category': 'prueba',
     'version': '1.0',
     'depends': ['base', 'baseModule'],
     'data': [
