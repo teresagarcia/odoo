@@ -27,6 +27,7 @@
           <field name="apellidos"/>
           <field name="fecha_incorporacion"/>
           <field name="id_idiomas"/>
+          <field name="tiempo"/>
         </tree>
       </field>
     </record>
