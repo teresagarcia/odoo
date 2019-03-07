@@ -32,6 +32,15 @@
       </field>
     </record>
    
+     <record model="ir.ui.view" id="encargo_calendar_view">
+            <field name="name">encargo_calendar</field>
+            <field name="model">tradus.encargo</field>
+            <field name="arch" type="xml">
+                <calendar string="Calendario de encargos" date_start="fecha_entrega" color="num_encargo">
+                    <field name="num_encargo"/>
+                </calendar>
+            </field>
+      </record>
 
     <record model="ir.ui.view" id="tradus_list_traductor">
       <field name="name">Lista de traductores</field>
@@ -87,7 +96,7 @@
   <record model="ir.actions.act_window" id="tradus_action_encargo">
       <field name="name">Encargo</field>
       <field name="res_model">tradus.encargo</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,calendar</field>
       <field name="context" eval="{'encargo_search_view':2}"/>
     </record>
 

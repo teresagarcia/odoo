@@ -5,6 +5,7 @@ from odoo import models, fields
 
 class encargo(models.Model):
    _name = 'tradus.encargo'
+   num_encargo = fields.Char()
    fecha_entrega = fields.Date()
    precio = fields.Integer()
    id_cliente = fields.Many2one('tradus.cliente', string="cliente")
